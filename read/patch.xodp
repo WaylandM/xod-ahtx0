@@ -53,6 +53,17 @@
         "y": 2
       },
       "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "S1Gl8YxyR",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
     }
   ]
 }

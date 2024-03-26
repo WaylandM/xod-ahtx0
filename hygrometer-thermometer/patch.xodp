@@ -1,0 +1,297 @@
+{
+  "links": [
+    {
+      "id": "B1kQSYlkC",
+      "input": {
+        "nodeId": "HJaGHYlkA",
+        "pinKey": "BJFwxtx10"
+      },
+      "output": {
+        "nodeId": "BkszSYekC",
+        "pinKey": "BkxOs_eJA"
+      }
+    },
+    {
+      "id": "rJ7LHteyA",
+      "input": {
+        "nodeId": "HJaGHYlkA",
+        "pinKey": "rJkDetlk0"
+      },
+      "output": {
+        "nodeId": "Hk3HHYgyC",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryBLSKlyR",
+      "input": {
+        "nodeId": "HJaGHYlkA",
+        "pinKey": "SJicQtgJ0"
+      },
+      "output": {
+        "nodeId": "HkxnSrtgy0",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rJw8SFxJC",
+      "input": {
+        "nodeId": "HJaGHYlkA",
+        "pinKey": "B1VhEKlyR"
+      },
+      "output": {
+        "nodeId": "HJbhSSYe1R",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJRtrtgJC",
+      "input": {
+        "nodeId": "r1EvHtlkC",
+        "pinKey": "SJtPnux1R"
+      },
+      "output": {
+        "nodeId": "BkszSYekC",
+        "pinKey": "BkxOs_eJA"
+      }
+    },
+    {
+      "id": "Hkp9BFekC",
+      "input": {
+        "nodeId": "SyF9Stg1C",
+        "pinKey": "SJ-1mZPTz"
+      },
+      "output": {
+        "nodeId": "rksdSYxyA",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJ05HKly0",
+      "input": {
+        "nodeId": "r1EvHtlkC",
+        "pinKey": "Skd_2dgyA"
+      },
+      "output": {
+        "nodeId": "SyF9Stg1C",
+        "pinKey": "OkPg7GDaW"
+      }
+    },
+    {
+      "id": "SJosrtgyA",
+      "input": {
+        "nodeId": "SJPiSFgk0",
+        "pinKey": "Bkh8A_Sv1-"
+      },
+      "output": {
+        "nodeId": "HJaGHYlkA",
+        "pinKey": "Hk_hxtxJC"
+      }
+    },
+    {
+      "id": "ry52SYgJ0",
+      "input": {
+        "nodeId": "rJIhHteJC",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SJPiSFgk0",
+        "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "SyNaSYlyC",
+      "input": {
+        "nodeId": "SyF9Stg1C",
+        "pinKey": "B1P1nFwaM"
+      },
+      "output": {
+        "nodeId": "rygTBKeJC",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Bk2AHKgkA",
+      "input": {
+        "nodeId": "Byv0rFg1C",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r1EvHtlkC",
+        "pinKey": "rkM33OlkC"
+      }
+    },
+    {
+      "id": "HJpArKxyR",
+      "input": {
+        "nodeId": "SyxwCHYe10",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r1EvHtlkC",
+        "pinKey": "HJTJpOlkR"
+      }
+    },
+    {
+      "id": "SyhlUKxk0",
+      "input": {
+        "nodeId": "rJ-v0SKl1R",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r1EvHtlkC",
+        "pinKey": "S1Gl8YxyR"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BkszSYekC",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/ahtx0-device"
+    },
+    {
+      "id": "HJaGHYlkA",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "@/init"
+    },
+    {
+      "description": "I²C bus",
+      "id": "Hk3HHYgyC",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": -1
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "38h"
+      },
+      "description": "I²C address of AHTX0 device.",
+      "id": "HkxnSrtgy0",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Initialize",
+      "id": "HJbhSSYe1R",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "r1EvHtlkC",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "@/read"
+    },
+    {
+      "description": "Update. Pulse triggers read.",
+      "id": "rksdSYxyA",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "SyF9Stg1C",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/core/gate"
+    },
+    {
+      "id": "SJPiSFgk0",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/core/flip-flop"
+    },
+    {
+      "id": "rJIhHteJC",
+      "label": "init",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "rygTBKeJC",
+      "label": "init",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "description": "Relative humidity (%).",
+      "id": "Byv0rFg1C",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Temperature (°C).",
+      "id": "SyxwCHYe10",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "rJ-v0SKl1R",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}
