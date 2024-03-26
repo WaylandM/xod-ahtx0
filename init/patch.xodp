@@ -1,0 +1,75 @@
+{
+  "description": "Initialize AHTX0 device.",
+  "nodes": [
+    {
+      "id": "BJ_Bgte10",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "I²C bus",
+      "id": "rJkDetlk0",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "description": "An AHTX0 device.",
+      "id": "BJFwxtx10",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "@/input-ahtx0-device"
+    },
+    {
+      "description": "Pulse on initialization.",
+      "id": "Hk_hxtxJC",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "38h"
+      },
+      "description": "I²C address of AHTX0 device.",
+      "id": "SJicQtgJ0",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Initialize",
+      "id": "B1VhEKlyR",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}

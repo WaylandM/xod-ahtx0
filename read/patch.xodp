@@ -1,0 +1,58 @@
+{
+  "description": "Read relative humidity and temperature.",
+  "nodes": [
+    {
+      "id": "rJmP2dxJ0",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An AHTX0 device.",
+      "id": "SJtPnux1R",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "@/input-ahtx0-device"
+    },
+    {
+      "description": "Update. Pulse triggers read.",
+      "id": "Skd_2dgyA",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Relative humidity (%).",
+      "id": "rkM33OlkC",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Temperature (°C).",
+      "id": "HJTJpOlkR",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    }
+  ]
+}
