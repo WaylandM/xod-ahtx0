@@ -1,3 +1,79 @@
 {
-  "description": "Patch to test the hygrometer-thermometer node. Run in debugger."
+  "description": "Patch to test the hygrometer-thermometer node. Run in debugger.",
+  "links": [
+    {
+      "id": "BJCiXWfJA",
+      "input": {
+        "nodeId": "S1JzUC-1A",
+        "pinKey": "rksdSYxyA"
+      },
+      "output": {
+        "nodeId": "ry5o7-zJ0",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "B1JaXbM10",
+      "input": {
+        "nodeId": "ryY3Q-fk0",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1JzUC-1A",
+        "pinKey": "Byv0rFg1C"
+      }
+    },
+    {
+      "id": "BkbTmWMJ0",
+      "input": {
+        "nodeId": "rJTnQ-MyR",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1JzUC-1A",
+        "pinKey": "SyxwCHYe10"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "S1JzUC-1A",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "@/hygrometer-thermometer"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "2"
+      },
+      "id": "ry5o7-zJ0",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "ryY3Q-fk0",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "rJTnQ-MyR",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
 }

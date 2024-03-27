@@ -1,3 +1,6 @@
 {
-  "name": "ahtx0"
+  "description": "Library for AHT10 and AHT20 temperature and humidity sensors. Wraps https://github.com/adafruit/Adafruit_AHTX0",
+  "license": "BSD",
+  "name": "ahtx0",
+  "version": "0.0.1"
 }
